@@ -1,0 +1,18 @@
+{
+  "variant": "vibrant",
+  "primary": "#2B54F0",
+  "secondary": "#8B4BDB",
+  "accent": "#E85B86",
+  "appearance": "light",
+  "radius": 0.75,
+  "colors": {
+    "background": "#ffffff",
+    "foreground": "#11181C",
+    "muted": "#f1f5f9",
+    "muted-foreground": "#64748b",
+    "border": "#e2e8f0",
+    "primary-gradient": "linear-gradient(90deg, #2B54F0 0%, #8B4BDB 50%, #E85B86 100%)",
+    "button-gradient": "linear-gradient(90deg, #2B54F0 0%, #8B4BDB 100%)",
+    "nav-gradient": "linear-gradient(90deg, #2B54F0 0%, #8B4BDB 70%, #E85B86 100%)"
+  }
+}

@@ -1,0 +1,58 @@
+import React from 'react';
+
+const BrandedFooter = () => {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="bg-gray-900 text-white py-8 mt-auto">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          {/* Logo and Copyright */}
+          <div className="flex items-center mb-4 md:mb-0">
+            <div className="mr-4">
+              <svg 
+                viewBox="0 0 50 50" 
+                className="w-10 h-10 text-blue-500"
+                fill="currentColor"
+              >
+                {/* Simplified cX logo - replace with actual logo SVG */}
+                <path d="M25 0C11.2 0 0 11.2 0 25s11.2 25 25 25 25-11.2 25-25S38.8 0 25 0zm0 45c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20z"/>
+                <path d="M35 20c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5z"/>
+              </svg>
+            </div>
+            <div>
+              <p className="text-sm">
+                Powered by cXentral<sup>®</sup> | cXonnect Hub™ | cXintegrate Hub™
+              </p>
+              <p className="text-xs text-gray-400">
+                © {year} cXentral. All rights reserved.
+              </p>
+            </div>
+          </div>
+
+          {/* Product Suite */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+              <h4 className="font-semibold mb-2">cXonnect Hub™</h4>
+              <p className="text-sm text-gray-400">Community & Collaboration</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2">cXintegrate Hub™</h4>
+              <p className="text-sm text-gray-400">Integration & APIs</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2">cXperience Hub™</h4>
+              <p className="text-sm text-gray-400">Experience Management</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2">cXcelerate Hub™</h4>
+              <p className="text-sm text-gray-400">Innovation & Growth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default BrandedFooter;
